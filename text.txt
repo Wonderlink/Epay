@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EPAY Online Banking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container" id="loginPage">
+    <h1>EPAY BANK</h1>
+
+    <form id="loginForm">
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<div class="dashboard" id="dashboard">
+
+    <nav>
+        <h2>EPAY</h2>
+        <button onclick="logout()">Logout</button>
+    </nav>
+
+    <section class="hero">
+        <div class="card3d">
+            <h2>Available Balance</h2>
+            <h1>$25,500.00</h1>
+        </div>
+    </section>
+
+    <section class="services">
+
+        <div class="box">
+            <h3>Transfer Money</h3>
+
+            <input type="text" placeholder="Recipient">
+            <input type="number" placeholder="Amount">
+
+            <button>Send</button>
+        </div>
+
+        <div class="box">
+            <h3>Pay Bills</h3>
+
+            <input type="text" placeholder="Bill Type">
+            <input type="number" placeholder="Amount">
+
+            <button>Pay</button>
+        </div>
+
+    </section>
+
+    <section class="transactions">
+        <h2>Transaction History</h2>
+
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Amount</th>
+            </tr>
+
+            <tr>
+                <td>01/06/2026</td>
+                <td>Salary</td>
+                <td>+$5,000</td>
+            </tr>
+
+            <tr>
+                <td>05/06/2026</td>
+                <td>Transfer</td>
+                <td>-$200</td>
+            </tr>
+
+            <tr>
+                <td>08/06/2026</td>
+                <td>Electricity Bill</td>
+                <td>-$80</td>
+            </tr>
+        </table>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
